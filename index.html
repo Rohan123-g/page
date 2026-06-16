@@ -155,31 +155,31 @@ document.getElementById("contacts").style="display:block";
 <form  onsubmit="return valid()" action="save.php">
 <table>
 <tr>
-<TD>USERNAME</TD>
-<TD><INPUT TYPE="TEXT"></TD>
+<TD>USERNAME<font color="red">*</font>font></TD>
+<TD><INPUT TYPE="TEXT"required></TD>
 </tr>
 <tr>
-<TD>PASSWORD</TD>
+<TD>PASSWORD <font color="red">*</font></TD>
 <TD>
-<input type="password" id="p">
+<input type="password"required id="p">
 <span id="p1"></span>
 </TD>
 </tr>
 <tr>
 <TD>ADDRESS</TD>
-<TD><TEXTAREA ROWS="8" COLS="60"></TEXTAREA></TD>
+<TD><TEXTAREA ROWS="8" COLS="60"required></TEXTAREA></TD>
 </tr>
 <tr>
 <TD>DOB</TD>
-<TD><INPUT TYPE="date"></TD>
+<TD><INPUT TYPE="date"required></TD>
 </tr>
 <tr>
 <TD>MOBILE NUMBER</TD>
-<TD><INPUT TYPE="TEXT" id="m" onchange="valid()"><font color="red" id="m1"></font></TD>
+<TD><INPUT TYPE="TEXT" id="m"required onchange="valid()"><font color="red" id="m1"></font></TD>
 </tr>
 <tr>
 <TD>EMAIL ID</TD>
-<TD><INPUT TYPE="text" id="e" onchange="valid()"><font color="red" id="e1"></font></TD>
+<TD><INPUT TYPE="text" id="e"required onchange="valid()"><font color="red" id="e1"></font></TD>
 </tr>
 <tr>
 <TD><input type="submit" value="SIGNUP"></TD>
